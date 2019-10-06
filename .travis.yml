@@ -7,3 +7,6 @@ before_install :
 
 script : 
   - docker run relmanso/docker-react npm run test -- --coverage
+
+after_success:
+  - npm run coverage
